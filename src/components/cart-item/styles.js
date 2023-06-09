@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CartItemContainer = styled.div`
   display: flex;
@@ -8,10 +8,14 @@ export const CartItemContainer = styled.div`
   p {
     color: #222222;
   }
+
+  svg {
+    color: #222;
+  }
 `;
 
 export const CartItemImage = styled.div`
-  background-image: ${(props) => `url('${props.imageUrl}')`};
+  background-image: ${props => `url('${props.imageUrl}')`};
   height: 250px;
   width: 170px;
   background-size: cover;

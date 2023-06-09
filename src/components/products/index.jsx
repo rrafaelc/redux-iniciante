@@ -1,16 +1,16 @@
-import products from "../../data/products";
+import products from '../../data/products';
 
 // Components
-import ProductItem from "../product-item/index";
+import ProductItem from '../product-item/index';
 
 // Styles
-import * as Styles from "./styles";
+import * as Styles from './styles';
 
 const Products = () => {
   return (
     <Styles.Container>
-      {products.map((product) => (
-        <ProductItem product={product} />
+      {products.map(product => (
+        <ProductItem product={product} key={product.id} />
       ))}
     </Styles.Container>
   );
